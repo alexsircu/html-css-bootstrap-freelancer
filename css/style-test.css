@@ -1,3 +1,8 @@
 body {
   padding: 100px;
 }
+
+.btn_send {
+  background: #1ABC9C;
+  border-color: #1ABC9C;
+}
