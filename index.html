@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- nostro foglio di stile -->
@@ -16,67 +17,73 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-6">
-            <h3>Start Bootstrap</h3>
+            <h3 class="text-uppercase">Start Bootstrap</h3>
           </div>
           <div class="col-xs-6 text-right">
-            <a href="#" class="visible-xs-inline-block">Menu</a>
+            <a type="button" class="btn btn-default btn_menu visible-xs-inline-block" aria-label="Left Align">
+              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </a>
             <ul class="list-inline hidden-xs">
               <li>
-                <a href="#">PORTFOLIO</a>
+                <a href="#" class="list_menu text-uppercase">portfolio</a>
               </li>
               <li>
-                <a href="#">ABOUT</a>
+                <a href="#" class="list_menu text-uppercase">about</a>
               </li>
               <li>
-                <a href="#">CONTACT</a>
+                <a href="#" class="list_menu text-uppercase">contact</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <!-- /parte superiore dell'header -->
     <!-- parte inferiore dell'header -->
     <div class="header_bottom text-center">
       <img src="http://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar">
       <h1 class="text-uppercase">Start Bootstrap</h1>
-      <h3>Graphic Artist - Web Designer - Illustrator</h3>
+      <span><hr class="mid_line_text_white"><i class="fas fa-star star_icon_white"></i><hr class="mid_line_text_white"></span>
+      <h3 class="text-uppercase">Graphic Artist - Web Designer - Illustrator</h3>
     </div>
+    <!-- /parte inferiore dell'header -->
   </header>
 
   <main>
     <!-- portfolio -->
-    <section id="portfolio">
-      <h2 class="color_blue text-center">PORTFOLIO</h2>
+    <section id="portfolio" class="text-center">
+      <h2 class="color_blue">PORTFOLIO</h2>
+      <span><hr class="mid_line_text_blue"><i class="fas fa-star star_icon_blue"></i><hr class="mid_line_text_blue"></span>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="portfolio_item">
-              <img src="" alt="">
+              <img src="img/cabin.png" alt="cabin">
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="portfolio_item">
-              <img src="" alt="">
+              <img src="img/cake.png" alt="tasty cake">
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="portfolio_item">
-              <img src="" alt="">
+              <img src="img/circus.png" alt="circus tent">
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="portfolio_item">
-              <img src="" alt="">
+              <img src="img/game.png" alt="controller">
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="portfolio_item">
-              <img src="" alt="">
+              <img src="img/safe.png" alt="locked safe">
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="portfolio_item">
-              <img src="" alt="">
+              <img src="img/submarine.png" alt="submarine">
             </div>
           </div>
         </div>
@@ -84,9 +91,10 @@
     </section>
     <!-- /portfolio -->
     <!-- about -->
-    <section id="about">
+    <section id="about" class="text-center">
       <div class="wrapper_60">
-        <h2 class="text-center">ABOUT</h2>
+        <h2>ABOUT</h2>
+        <span><hr class="mid_line_text_white"><i class="fas fa-star star_icon_white"></i><hr class="mid_line_text_white"></span>
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-md-6">
@@ -101,12 +109,16 @@
     </section>
     <!-- /about -->
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="text-center">
       <div class="wrapper_60 color_blue">
-        <h2 class="text-center">CONTACT ME</h2>
+        <h2>CONTACT ME</h2>
+        <span><hr class="mid_line_text_blue"><i class="fas fa-star star_icon_blue"></i><hr class="mid_line_text_blue"></span>
         <h4>Name</h4>
+        <hr>
         <h4>Email Address</h4>
+        <hr>
         <h4>Phone Number</h4>
+        <hr>
         <h4>Message</h4>
       </div>
     </section>
@@ -118,16 +130,38 @@
     <div class="footer_top text-center">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-4">
+          <div id="address" class="col-xs-12 col-md-4">
             <h4>LOCATION</h4>
             <h4>2215 John Daniel Drive Clark, MO 54243</h4>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div id="social" class="col-xs-12 col-md-4">
             <h4>AROUND THE WEB</h4>
+            <ul class="list_inline">
+              <li>
+                <div class="logo_social_container">
+                  <i class="fab fa-facebook logo"></i>
+                </div>
+              </li>
+              <li>
+                <div class="logo_social_container">
+                  <i class="fab fa-google-plus-g logo"></i>
+                </div>
+              </li>
+              <li>
+                <div class="logo_social_container logo">
+                  <i class="fab fa-twitter logo"></i>
+                </div>
+              </li>
+              <li>
+                <div class="logo_social_container">
+                  <i class="fab fa-linkedin-in logo"></i>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div id="freelancer" class="col-xs-12 col-md-4">
             <h4>ABOUT FREELANCER</h4>
-            <p>Freelance is a free to use , open source Bootstrap theme created by Start Bootstrap</p>
+            <p>Freelance is a free to use , open source Bootstrap theme created by <a href="#">Start Bootstrap</a></p>
           </div>
         </div>
       </div>
